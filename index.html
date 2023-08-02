@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a979d5ea43.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Temperature Converter <i class="fa-solid fa-temperature-three-quarters"></i></h1>
+        <form id="temperature-form">
+            <label for="temperature">Enter Temperature:</label>
+            <input type="number" id="temperature" step="any" required>
+
+            <label for="from-unit">From Unit:</label>
+            <select id="from-unit">
+                <option value="kelvin">Kelvin</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+
+            <label for="to-unit">To Unit:</label>
+            <select id="to-unit">
+                <option value="kelvin">Kelvin</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+
+            <input type="submit" value="Convert">
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
